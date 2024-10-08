@@ -254,39 +254,39 @@ namespace Lecture_3_MakingDecision
             //}
             //--
 
-            int number1, number2, result;
-            char symbol;
+            //int number1, number2, result;
+            //char symbol;
 
-            Console.Write("1.Sayıyı giriniz: ");
-            number1 = int.Parse(Console.ReadLine());
+            //Console.Write("1.Sayıyı giriniz: ");
+            //number1 = int.Parse(Console.ReadLine());
 
-            Console.Write("2.Sayıyı giriniz: ");
-            number2 = int.Parse(Console.ReadLine());
+            //Console.Write("2.Sayıyı giriniz: ");
+            //number2 = int.Parse(Console.ReadLine());
 
-            Console.Write("Yapmak istediğiniz işlemi giriniz: ");
-            symbol = char.Parse(Console.ReadLine());
+            //Console.Write("Yapmak istediğiniz işlemi giriniz: ");
+            //symbol = char.Parse(Console.ReadLine());
 
-            switch (symbol)
-            {
-                case '+':
-                    result = number1 + number2;
-                    Console.WriteLine("Sonuç: " + result);
-                    break;
-                case '-':
-                    result = number1 - number2;
-                    Console.WriteLine("Sonuç: " + result);
-                    break;
-                case '*':
-                    result = number1 * number2;
-                    Console.WriteLine("Sonuç: " + result);
-                    break;
-                case '/':
-                    result = number1 / number2;
-                    Console.WriteLine("Sonuç: " + result);
-                    break;
-                default:
-                    break;
-            }
+            //switch (symbol)
+            //{
+            //    case '+':
+            //        result = number1 + number2;
+            //        Console.WriteLine("Sonuç: " + result);
+            //        break;
+            //    case '-':
+            //        result = number1 - number2;
+            //        Console.WriteLine("Sonuç: " + result);
+            //        break;
+            //    case '*':
+            //        result = number1 * number2;
+            //        Console.WriteLine("Sonuç: " + result);
+            //        break;
+            //    case '/':
+            //        result = number1 / number2;
+            //        Console.WriteLine("Sonuç: " + result);
+            //        break;
+            //    default:
+            //        break;
+            //}
 
             #endregion
 

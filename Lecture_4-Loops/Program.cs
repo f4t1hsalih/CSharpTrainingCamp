@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Lecture_4_Loops
 {
@@ -143,36 +142,38 @@ namespace Lecture_4_Loops
             #region Örnek Sınav Sorusu
 
             //Klavyeden girilen 3 baasamaklı sayının basamakları toplamını hesaplayan kodu yazınız
-            int flag = 0;
-            while (flag == 0)
-            {
-                Console.Write("Sayıyı Giriniz: ");
-                int number = int.Parse(Console.ReadLine());
-                if (number >= 100 & number <= 999)
-                {
-                    int ones, tens, hundreds, sum;
+            //int flag = 0;
+            //while (flag == 0)
+            //{
+            //    Console.Write("Sayıyı Giriniz: ");
+            //    int number = int.Parse(Console.ReadLine());
+            //    if (number >= 100 & number <= 999)
+            //    {
+            //        int ones, tens, hundreds, sum;
 
-                    ones = number % 10;
-                    tens = (number % 100) / 10;
-                    hundreds = number / 100;
+            //        ones = number % 10;
+            //        tens = (number % 100) / 10;
+            //        hundreds = number / 100;
 
-                    sum = ones + tens + hundreds;
+            //        sum = ones + tens + hundreds;
 
-                    Console.WriteLine("------------------");
-                    Console.WriteLine("Birler Basamağı: " + ones);
-                    Console.WriteLine("Onlar Basamağı: " + tens);
-                    Console.WriteLine("Yüzler Basamağı: " + hundreds);
-                    Console.WriteLine("------------------");
-                    Console.WriteLine("Basamaklar Toplamı: " + sum);
-                    flag = 1;
-                }
-                else
-                {
-                    Console.WriteLine("Lütfen 3 basamaklı bir sayı giriniz!!!");
-                    Console.WriteLine("***************************");
-                    Console.WriteLine();
-                }
-            }
+            //        Console.WriteLine("------------------");
+            //        Console.WriteLine("Birler Basamağı: " + ones);
+            //        Console.WriteLine("Onlar Basamağı: " + tens);
+            //        Console.WriteLine("Yüzler Basamağı: " + hundreds);
+            //        Console.WriteLine("------------------");
+            //        Console.WriteLine("Basamaklar Toplamı: " + sum);
+            //        flag = 1;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Lütfen 3 basamaklı bir sayı giriniz!!!");
+            //        Console.WriteLine("***************************");
+            //        Console.WriteLine();
+            //    }
+            //}
+            //--
+
             #endregion
 
             Console.ReadKey();
