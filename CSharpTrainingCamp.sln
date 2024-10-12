@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_4-Loops", "Lecture_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_5-LoopsWithStars", "Lecture_5-LoopsWithStars\Lecture_5-LoopsWithStars.csproj", "{91FF268E-4F04-4BA4-891D-74E365202D2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_6-Arrays", "Lecture_6-Arrays\Lecture_6-Arrays.csproj", "{BE51EADD-E3FA-439E-9D5D-D4E388FB25EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{91FF268E-4F04-4BA4-891D-74E365202D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91FF268E-4F04-4BA4-891D-74E365202D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91FF268E-4F04-4BA4-891D-74E365202D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE51EADD-E3FA-439E-9D5D-D4E388FB25EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE51EADD-E3FA-439E-9D5D-D4E388FB25EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE51EADD-E3FA-439E-9D5D-D4E388FB25EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE51EADD-E3FA-439E-9D5D-D4E388FB25EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
