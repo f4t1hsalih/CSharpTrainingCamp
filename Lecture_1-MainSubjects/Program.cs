@@ -144,7 +144,6 @@ namespace Lecture_1_MainSubjects
 
             #endregion
 
-            Console.Read();
         }
     }
 }

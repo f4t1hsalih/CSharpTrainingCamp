@@ -165,7 +165,6 @@ namespace Lecture_2_Variables
                 
             #endregion
 
-            Console.Read();
         }
     }
 }

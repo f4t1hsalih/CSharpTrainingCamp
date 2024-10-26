@@ -290,8 +290,6 @@ namespace Lecture_3_MakingDecision
 
             #endregion
 
-            Console.Read();
-
         }
     }
 }

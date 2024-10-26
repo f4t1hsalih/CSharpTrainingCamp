@@ -176,8 +176,6 @@ namespace Lecture_4_Loops
 
             #endregion
 
-            Console.ReadKey();
-
         }
     }
 }

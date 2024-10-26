@@ -178,8 +178,6 @@ namespace Lecture_6_Arrays
 
             #endregion
 
-            Console.ReadKey();
-
         }
     }
 }

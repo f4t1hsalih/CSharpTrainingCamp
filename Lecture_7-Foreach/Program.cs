@@ -130,8 +130,6 @@ namespace Lecture_7_Foreach
 
             #endregion
 
-            Console.ReadKey();
-
         }
     }
 }

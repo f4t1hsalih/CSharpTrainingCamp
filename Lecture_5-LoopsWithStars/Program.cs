@@ -133,8 +133,6 @@ namespace Lecture_5_LoopsWithStars
 
             #endregion
 
-            Console.ReadKey();
-
         }
     }
 }

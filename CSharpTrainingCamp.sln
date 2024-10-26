@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_8-Methods", "Lectur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_9-DatabaseProject", "Lecture_9-DatabaseProject\Lecture_9-DatabaseProject.csproj", "{255B923F-51E7-4CDB-8C90-5EA4BC47D02A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_10-DatabaseCrud", "Lecture_10-DatabaseCrud\Lecture_10-DatabaseCrud.csproj", "{BCFDDB33-E4A7-4053-91E7-BBA5A0B43ACD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{255B923F-51E7-4CDB-8C90-5EA4BC47D02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{255B923F-51E7-4CDB-8C90-5EA4BC47D02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{255B923F-51E7-4CDB-8C90-5EA4BC47D02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCFDDB33-E4A7-4053-91E7-BBA5A0B43ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFDDB33-E4A7-4053-91E7-BBA5A0B43ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFDDB33-E4A7-4053-91E7-BBA5A0B43ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFDDB33-E4A7-4053-91E7-BBA5A0B43ACD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

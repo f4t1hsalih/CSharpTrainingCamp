@@ -131,8 +131,6 @@ namespace Lecture_8_Methods
 
             #endregion
 
-            Console.ReadKey();
-
         }
     }
 }
