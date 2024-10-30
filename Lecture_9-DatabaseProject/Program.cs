@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Lecture_9_DatabaseProject
+namespace Lecture_09_DatabaseProject
 {
     internal class Program
     {

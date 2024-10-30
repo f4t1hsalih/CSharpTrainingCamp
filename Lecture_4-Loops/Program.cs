@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lecture_4_Loops
+namespace Lecture_04_Loops
 {
     internal class Program
     {

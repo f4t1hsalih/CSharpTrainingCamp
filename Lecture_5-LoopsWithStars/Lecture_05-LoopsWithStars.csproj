@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99DBED9A-5903-4576-B164-3268AA29E949}</ProjectGuid>
+    <ProjectGuid>{91FF268E-4F04-4BA4-891D-74E365202D2A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lecture_2_Variables</RootNamespace>
-    <AssemblyName>Lecture_2-Variables</AssemblyName>
+    <RootNamespace>Lecture_05_LoopsWithStars</RootNamespace>
+    <AssemblyName>Lecture_05-LoopsWithStars</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

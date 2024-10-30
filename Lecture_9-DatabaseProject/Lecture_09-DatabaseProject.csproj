@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0A0DEE1D-770D-4A54-8FDC-91A75915D130}</ProjectGuid>
+    <ProjectGuid>{255B923F-51E7-4CDB-8C90-5EA4BC47D02A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lecture_7_Foreach</RootNamespace>
-    <AssemblyName>Lecture_7-Foreach</AssemblyName>
+    <RootNamespace>Lecture_09_DatabaseProject</RootNamespace>
+    <AssemblyName>Lecture_09-DatabaseProject</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lecture_6_Arrays
+namespace Lecture_06_Arrays
 {
     internal class Program
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lecture_3_MakingDecision
+namespace Lecture_03_MakingDecision
 {
     internal class Program
     {

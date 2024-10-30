@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lecture_8_Methods
+namespace Lecture_08_Methods
 {
     internal class Program
     {

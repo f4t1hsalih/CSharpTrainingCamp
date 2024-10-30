@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lecture_2_Variables
+namespace Lecture_02_Variables
 {
     internal class Program
     {

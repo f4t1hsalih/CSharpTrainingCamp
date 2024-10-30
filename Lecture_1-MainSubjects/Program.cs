@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lecture_1_MainSubjects
+namespace Lecture_01_MainSubjects
 {
     internal class Program
     {
@@ -8,11 +8,11 @@ namespace Lecture_1_MainSubjects
         {
             #region Yazdırma Komutları
 
-            //Yazar ve alt satıra imleci getirir
+            ////Yazar ve alt satıra imleci getirir
             //Console.WriteLine("Hello World!");
-            //Yazar ve yazının sonuna imleci getirir
+            ////Yazar ve yazının sonuna imleci getirir
             //Console.Write("Selam");
-            //--
+            ////--
 
             //Console.WriteLine("***** Yemek Kategorileri ******");
             //Console.WriteLine();

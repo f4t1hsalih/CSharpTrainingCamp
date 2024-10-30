@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lecture_7_Foreach
+namespace Lecture_07_Foreach
 {
     internal class Program
     {

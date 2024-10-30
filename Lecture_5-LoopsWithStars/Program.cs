@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lecture_5_LoopsWithStars
+namespace Lecture_05_LoopsWithStars
 {
     internal class Program
     {
