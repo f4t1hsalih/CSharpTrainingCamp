@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_01-MainSubjects", "Lecture_1-MainSubjects\Lecture_01-MainSubjects.csproj", "{CCF9C6D3-8A39-4F24-AB9E-0A0763660A15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_01-MainSubjects", "Lecture_01-MainSubjects\Lecture_01-MainSubjects.csproj", "{CCF9C6D3-8A39-4F24-AB9E-0A0763660A15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_02-Variables", "Lecture_2-Variables\Lecture_02-Variables.csproj", "{99DBED9A-5903-4576-B164-3268AA29E949}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_02-Variables", "Lecture_02-Variables\Lecture_02-Variables.csproj", "{99DBED9A-5903-4576-B164-3268AA29E949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_03-MakingDecision", "Lecture_3-MakingDecision\Lecture_03-MakingDecision.csproj", "{3E716E50-A79C-46D2-94BD-E117FA70437F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_03-MakingDecision", "Lecture_03-MakingDecision\Lecture_03-MakingDecision.csproj", "{3E716E50-A79C-46D2-94BD-E117FA70437F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_04-Loops", "Lecture_4-Loops\Lecture_04-Loops.csproj", "{7FCC4D33-5C16-497D-A3BA-FCB2C57D3249}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_04-Loops", "Lecture_04-Loops\Lecture_04-Loops.csproj", "{7FCC4D33-5C16-497D-A3BA-FCB2C57D3249}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_05-LoopsWithStars", "Lecture_5-LoopsWithStars\Lecture_05-LoopsWithStars.csproj", "{91FF268E-4F04-4BA4-891D-74E365202D2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_05-LoopsWithStars", "Lecture_05-LoopsWithStars\Lecture_05-LoopsWithStars.csproj", "{91FF268E-4F04-4BA4-891D-74E365202D2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_06-Arrays", "Lecture_6-Arrays\Lecture_06-Arrays.csproj", "{BE51EADD-E3FA-439E-9D5D-D4E388FB25EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_06-Arrays", "Lecture_06-Arrays\Lecture_06-Arrays.csproj", "{BE51EADD-E3FA-439E-9D5D-D4E388FB25EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_07-Foreach", "Lecture_7-Foreach\Lecture_07-Foreach.csproj", "{0A0DEE1D-770D-4A54-8FDC-91A75915D130}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_07-Foreach", "Lecture_07-Foreach\Lecture_07-Foreach.csproj", "{0A0DEE1D-770D-4A54-8FDC-91A75915D130}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_08-Methods", "Lecture_8-Methods\Lecture_08-Methods.csproj", "{6F42AB53-6859-4EEC-80B6-85A6799DDCF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_08-Methods", "Lecture_08-Methods\Lecture_08-Methods.csproj", "{6F42AB53-6859-4EEC-80B6-85A6799DDCF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_09-DatabaseProject", "Lecture_9-DatabaseProject\Lecture_09-DatabaseProject.csproj", "{255B923F-51E7-4CDB-8C90-5EA4BC47D02A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_09-DatabaseProject", "Lecture_09-DatabaseProject\Lecture_09-DatabaseProject.csproj", "{255B923F-51E7-4CDB-8C90-5EA4BC47D02A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_10-DatabaseCrud", "Lecture_10-DatabaseCrud\Lecture_10-DatabaseCrud.csproj", "{BCFDDB33-E4A7-4053-91E7-BBA5A0B43ACD}"
 EndProject
