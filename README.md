@@ -31,3 +31,14 @@ Kodlarımı daha modüler hale getirmek için metotlar oluşturdum. Parametre al
 
 ## 🌟 Proje 10: CRUD İşlemleri
 **CRUD** işlemlerini sırasıyla tamamladım. (**C** - Create) Insert ile veri kaydettik, (**R** - Read) Write ile veri listeledik, (**U** - Update) Update ile veritabanında bulunan bir verinin değerlerini güncelledik ve (**D** - Delete) Delete işlemi ile de veri silmeyi öğrendik. 📝
+
+## 🌟 Proje 11: OOP ve N Katmanlı Mimari
+**N Katmanlı Mimari** ile **EntityLayer** - **DataAccessLayer** - **BusinessLayer** - **PresentationLayer** oluşturduk. Bu katmanların her biri kendine özgü işlemleri yapmak için oluşturuldu. **EntityLayer**'da Concrete klasörü oluşturuldu ve içerisinde Class'lar ve Class'lar içerisinde de Property'ler tanımlandı. Bu Class'lar Veritabanındaki her bir tabloya denk gelir ve Class'lar içerisinde bulunan Property'ler de Veritabanında bulunan tablolar içerisindeki stunlara karşılık gelir. 📦
+
+### Access Modifiers
+Access Modifiers (Erişim Belirleyiciler) C# dilinde dört temel erişim belirleyici ile kullanılır:
+
+1. **public**: Sınıf veya üye elemanına tüm katmanlardan erişilebilir.
+2. **private**: Yalnızca tanımlandığı sınıfın içerisinde erişilebilir.
+3. **protected**: Yalnızca tanımlandığı sınıf ve o sınıftan türetilen sınıflardan erişilebilir.
+4. **internal**: Sadece aynı proje (assembly) içerisinde erişim sağlanabilir.
