@@ -42,3 +42,9 @@ Access Modifiers (Erişim Belirleyiciler) C# dilinde dört temel erişim belirle
 2. **private**: Yalnızca tanımlandığı sınıfın içerisinde erişilebilir.
 3. **protected**: Yalnızca tanımlandığı sınıf ve o sınıftan türetilen sınıflardan erişilebilir.
 4. **internal**: Sadece aynı proje (assembly) içerisinde erişim sağlanabilir.
+
+## 🌟 Proje 12: OOP Modülü – Data Access Katmanı ve Context Sınıfı
+**Context** sınıfını projeye ekledik ve `DbSet<>` kullanarak veritabanında oluşturulacak sınıfları tanımladık. Ayrıca, bazı sınıflar için bire-çok ilişki tanımlamalarını gerçekleştirdik. Bu yapı, veritabanı ilişkilerini daha düzenli ve yönetilebilir hale getirirken, veritabanının oluşturulabilmesi için **app.config** dosyasında **connectionStrings** bölümünü tanımladık. 🚀
+
+
+
