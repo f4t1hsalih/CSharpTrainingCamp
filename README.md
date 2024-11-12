@@ -47,7 +47,11 @@ Access Modifiers (Erişim Belirleyiciler) C# dilinde dört temel erişim belirle
 **Context** sınıfını projeye ekledik ve `DbSet<>` kullanarak veritabanında oluşturulacak sınıfları tanımladık. Ayrıca, bazı sınıflar için bire-çok ilişki tanımlamalarını gerçekleştirdik. Bu yapı, veritabanı ilişkilerini daha düzenli ve yönetilebilir hale getirirken, veritabanının oluşturulabilmesi için **app.config** dosyasında **connectionStrings** bölümünü tanımladık. 🚀
 
 ## 🌟 Proje 13: OOP Modülü – Migration İşlemleri ve Abstract Interface'ler
-
 **Migration** işlemlerinin nasıl kullanıldığını ve ne işe yaradığını öğrendik. Projemizde oluşturduğumuz entity'leri `update-database` komutu ile veritabanına yansıttık. Ardından design pattern kavramını inceledik ve `IGenericDal` interface'i ile generic bir yapı oluşturduk. DataAccessLayer'da bulunan `Abstract` klasörü içerisinde her entity için bir interface tanımlayıp, bu interface'lerin `IGenericDal`'dan miras almasını sağladık. ⚙️
+
+## 🌟 Proje 14: ORM Yapısı: Entity Framework DB First ve Model Oluşturma
+Bu projede, **Entity Framework**'ün ORM (Object-Relational Mapping) yeteneklerinden nasıl yararlanabileceğimizi ve veri tabanı işlemlerini nasıl kolaylaştırabileceğimizi öğrendik. **DB First** yaklaşımıyla önceden var olan bir veritabanını projemize dahil ettik ve bu yaklaşımın detaylarına değindik.
+
+Entity Framework'ün **DB First** yöntemi, mevcut bir veritabanı yapısına dayalı olarak otomatik olarak modeller oluşturmak için kullanılan bir yöntemdir. Bu projede, önceden oluşturduğumuz veritabanını DB First yaklaşımıyla **Model1.edmx** dosyası üzerinden modelledik. **Model1.edmx** dosyası, veritabanındaki tablolar, ilişkiler ve diğer nesneleri görsel bir şekilde incelememizi sağladı. Bu dosyayı kullanarak veritabanındaki varlıklar (entities) ile .NET nesneleri arasında bağlantı kurmamız mümkün hale geldi.📊
 
 
