@@ -54,4 +54,12 @@ Bu projede, **Entity Framework**'ün ORM (Object-Relational Mapping) yetenekleri
 
 Entity Framework'ün **DB First** yöntemi, mevcut bir veritabanı yapısına dayalı olarak otomatik olarak modeller oluşturmak için kullanılan bir yöntemdir. Bu projede, önceden oluşturduğumuz veritabanını DB First yaklaşımıyla **Model1.edmx** dosyası üzerinden modelledik. **Model1.edmx** dosyası, veritabanındaki tablolar, ilişkiler ve diğer nesneleri görsel bir şekilde incelememizi sağladı. Bu dosyayı kullanarak veritabanındaki varlıklar (entities) ile .NET nesneleri arasında bağlantı kurmamız mümkün hale geldi.📊
 
+## 🌟 Proje 15: Entity Framework Metotları ile Proje Uygulaması
+Bu projede **Entity Framework** metodlarını bir Windows Form uygulamasında kullandık. Uygulamada:  
+- **DataGridView** üzerinden veri görüntüleme,  
+- **TextBox** aracılığıyla girilen verileri veritabanına kaydetme,  
+- **ID** ile veri çekme ve düzenleme işlemlerini gerçekleştirdik.  
+
+Ayrıca, **SSMS** kullanarak veritabanına yeni bir tablo ekledik ve bu tabloyu **Model1.edmx** dosyamıza *Update Model from Database* seçeneği ile dahil ettik. Böylece veritabanı ile uygulama arasında entegrasyonu sağladık. 🔄
+
 
