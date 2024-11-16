@@ -12,11 +12,10 @@ namespace Lecture_14_EntityFramework
     using System;
     using System.Collections.Generic;
     
-    public partial class Customer
+    public partial class Admin
     {
         public byte Id { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public Nullable<decimal> Balance { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }
