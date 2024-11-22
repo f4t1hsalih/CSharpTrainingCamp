@@ -62,4 +62,15 @@ Bu projede **Entity Framework** metodlarını bir Windows Form uygulamasında ku
 
 Ayrıca, **SSMS** kullanarak veritabanına yeni bir tablo ekledik ve bu tabloyu **Model1.edmx** dosyamıza *Update Model from Database* seçeneği ile dahil ettik. Böylece veritabanı ile uygulama arasında entegrasyonu sağladık. 🔄
 
+## 🌟 Proje 16: Entity Framework: Tur Projesi Location İşlemleri
+Bu projede, **Location** tablosu için bir form oluşturduk. Bu formda şu işlemleri gerçekleştirdik:
+
+- Kayıtları **listeleme**
+- Yeni kayıt **ekleme**  
+- Mevcut kayıtları **silme**  
+- Kayıt **güncelleme**  
+- **ID'ye göre** veri getirme  
+- **ID'ye göre** tabloya veri listeleme  
+
+Bu ders, bir önceki dersin konularını pekiştirme amacıyla yapılan bir çalışma oldu. 🔄
 
