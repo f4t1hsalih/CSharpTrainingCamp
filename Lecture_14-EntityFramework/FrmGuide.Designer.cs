@@ -1,6 +1,6 @@
 ﻿namespace Lecture_14_EntityFramework
 {
-    partial class Form1
+    partial class FrmGuide
     {
         /// <summary>
         /// Required designer variable.

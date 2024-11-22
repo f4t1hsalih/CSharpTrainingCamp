@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace Lecture_14_EntityFramework
 {
-    public partial class Form1 : Form
+    public partial class FrmGuide : Form
     {
-        public Form1()
+        public FrmGuide()
         {
             InitializeComponent();
             List();
