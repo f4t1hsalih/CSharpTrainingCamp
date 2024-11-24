@@ -74,3 +74,11 @@ Bu projede, **Location** tablosu için bir form oluşturduk. Bu formda şu işle
 
 Bu ders, bir önceki dersin konularını pekiştirme amacıyla yapılan bir çalışma oldu. 🔄
 
+## 🌟 Proje 17: Entity Framework ve LINQ ile İstatistik Takibi
+Bu projede, **Entity Framework** ve **LINQ** sorguları kullanılarak bir Windows Form uygulamasında veri tabanından alınan istatistikler listelendi.  
+İstatistikler, dinamik olarak oluşturulup uygulama arayüzünde gösterildi.  
+Bazı istatistikler için **alt sorgular** kullanıldı.
+
+![Proje Görseli](Pictures/Lecture14-FrmStatistics.png)
+
+
