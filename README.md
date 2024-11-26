@@ -50,12 +50,12 @@ Access Modifiers (Erişim Belirleyiciler) C# dilinde dört temel erişim belirle
 **Migration** işlemlerinin nasıl kullanıldığını ve ne işe yaradığını öğrendik. Projemizde oluşturduğumuz entity'leri `update-database` komutu ile veritabanına yansıttık. Ardından design pattern kavramını inceledik ve `IGenericDal` interface'i ile generic bir yapı oluşturduk. DataAccessLayer'da bulunan `Abstract` klasörü içerisinde her entity için bir interface tanımlayıp, bu interface'lerin `IGenericDal`'dan miras almasını sağladık. ⚙️
 
 ## 🌟 Proje 14: ORM Yapısı: Entity Framework DB First ve Model Oluşturma
-Bu projede, **Entity Framework**'ün ORM (Object-Relational Mapping) yeteneklerinden nasıl yararlanabileceğimizi ve veri tabanı işlemlerini nasıl kolaylaştırabileceğimizi öğrendik. **DB First** yaklaşımıyla önceden var olan bir veritabanını projemize dahil ettik ve bu yaklaşımın detaylarına değindik.
+**Entity Framework**'ün ORM (Object-Relational Mapping) yeteneklerinden nasıl yararlanabileceğimizi ve veri tabanı işlemlerini nasıl kolaylaştırabileceğimizi öğrendik. **DB First** yaklaşımıyla önceden var olan bir veritabanını projemize dahil ettik ve bu yaklaşımın detaylarına değindik.
 
 Entity Framework'ün **DB First** yöntemi, mevcut bir veritabanı yapısına dayalı olarak otomatik olarak modeller oluşturmak için kullanılan bir yöntemdir. Bu projede, önceden oluşturduğumuz veritabanını DB First yaklaşımıyla **Model1.edmx** dosyası üzerinden modelledik. **Model1.edmx** dosyası, veritabanındaki tablolar, ilişkiler ve diğer nesneleri görsel bir şekilde incelememizi sağladı. Bu dosyayı kullanarak veritabanındaki varlıklar (entities) ile .NET nesneleri arasında bağlantı kurmamız mümkün hale geldi.📊
 
 ## 🌟 Proje 15: Entity Framework Metotları ile Proje Uygulaması
-Bu projede **Entity Framework** metodlarını bir Windows Form uygulamasında kullandık. Uygulamada:  
+**Entity Framework** metodlarını bir Windows Form uygulamasında kullandık. Uygulamada:  
 - **DataGridView** üzerinden veri görüntüleme,  
 - **TextBox** aracılığıyla girilen verileri veritabanına kaydetme,  
 - **ID** ile veri çekme ve düzenleme işlemlerini gerçekleştirdik.  
@@ -63,7 +63,7 @@ Bu projede **Entity Framework** metodlarını bir Windows Form uygulamasında ku
 Ayrıca, **SSMS** kullanarak veritabanına yeni bir tablo ekledik ve bu tabloyu **Model1.edmx** dosyamıza *Update Model from Database* seçeneği ile dahil ettik. Böylece veritabanı ile uygulama arasında entegrasyonu sağladık. 🔄
 
 ## 🌟 Proje 16: Entity Framework: Tur Projesi Location İşlemleri
-Bu projede, **Location** tablosu için bir form oluşturduk. Bu formda şu işlemleri gerçekleştirdik:
+**Location** tablosu için bir form oluşturduk. Bu formda şu işlemleri gerçekleştirdik:
 
 - Kayıtları **listeleme**
 - Yeni kayıt **ekleme**  
@@ -75,10 +75,16 @@ Bu projede, **Location** tablosu için bir form oluşturduk. Bu formda şu işle
 Bu ders, bir önceki dersin konularını pekiştirme amacıyla yapılan bir çalışma oldu. 🔄
 
 ## 🌟 Proje 17: Entity Framework ve LINQ ile İstatistik Takibi
-Bu projede, **Entity Framework** ve **LINQ** sorguları kullanılarak bir Windows Form uygulamasında veri tabanından alınan istatistikler listelendi.  
+Bu derste, **Entity Framework** ve **LINQ** sorguları kullanılarak bir Windows Form uygulamasında veri tabanından alınan istatistikler listelendi.  
 İstatistikler, dinamik olarak oluşturulup uygulama arayüzünde gösterildi.  
 Bazı istatistikler için **alt sorgular** kullanıldı.
 
 ![Proje Görseli](Pictures/Lecture14-FrmStatistics.png)
+
+## 🌟 Proje 18: EntityState Komutları, Generic Repository Sınıfı ve EF Sınıfları 
+**DataAccessLayer** içinde  Repository isimli bir klasör oluşturduk ve içerisine GenericRepository sınıfını ekledik. Bu sınıf ile CRUD işlemlerini genel bir sınıfa toplamış olduk. Entity Framework ve LINQ sorguları kullanılarak CRUD işlemleri başarıyla tamamladık. 
+
+Daha sonra, EntityFramework isimli bir klasör oluşturduk. Bu klasör içerisinde her bir entity için Ef...Dal şeklinde sınıflar tanımladık. Bu sınıflar, GenericRepository ve I...Dal şeklinde oluşturulmuş ilgili interface'ten miras aldı.📊
+
 
 
