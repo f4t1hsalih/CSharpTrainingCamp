@@ -86,5 +86,14 @@ Bazı istatistikler için **alt sorgular** kullanıldı.
 
 Daha sonra, EntityFramework isimli bir klasör oluşturduk. Bu klasör içerisinde her bir entity için Ef...Dal şeklinde sınıflar tanımladık. Bu sınıflar, GenericRepository ve I...Dal şeklinde oluşturulmuş ilgili interface'ten miras aldı.📊
 
+## 🌟 Proje 19: Business Katmanı ve Logic Kuralları
+**BusinessLayer** içinde **Abstract** ve **Concrete** adında iki klasör oluşturduk. 
+
+- **Abstract** klasöründe bir **GenericService** interface'i tanımladık. Daha sonra bu generic servisten miras alarak her bir entity için ayrı ayrı service interface'leri oluşturduk.  
+- **Concrete** klasöründe ise **Abstract** klasöründe tanımlanan her bir interface için bir **Manager** sınıfı oluşturduk. Bu sınıflar, ilgili interface'lerden miras aldı.  
+
+Ardından **Dependency Injection** kullanarak, her bir **Manager** sınıfının `constructor` metodunda gerekli database atamalarını gerçekleştirdik. Her bir **Manager** sınıfını, **EntityFramework** metodlarından faydalanarak doldurduk. Ayrıca, **BusinessLayer**'ın validasyon işlemleri için kullanıldığını ve burada oluşturduğumuz **Manager** sınıfları aracılığıyla bu validasyon işlemlerini nasıl gerçekleştirebileceğimizi öğrendik. ✅
+
+
 
 
