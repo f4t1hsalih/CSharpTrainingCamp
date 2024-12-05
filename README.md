@@ -94,6 +94,15 @@ Daha sonra, EntityFramework isimli bir klasör oluşturduk. Bu klasör içerisin
 
 Ardından **Dependency Injection** kullanarak, her bir **Manager** sınıfının `constructor` metodunda gerekli database atamalarını gerçekleştirdik. Her bir **Manager** sınıfını, **EntityFramework** metodlarından faydalanarak doldurduk. Ayrıca, **BusinessLayer**'ın validasyon işlemleri için kullanıldığını ve burada oluşturduğumuz **Manager** sınıfları aracılığıyla bu validasyon işlemlerini nasıl gerçekleştirebileceğimizi öğrendik. ✅
 
+## 🌟 Proje 20: Dependency Injection (Bağımlılık Enjeksiyonu)
+**Dependency Injection (DI)** nedir, projelerde ne için ve nasıl kullanılır gibi konularda bilgi aldık. **Constructor** metodunun ne işe yaradığını, neden ve nasıl kullanıldığını inceledik. Projemizde oluşturduğumuz constructor metod sayesinde, form oluşturulurken ilgili servisi çağırdık ve manuel olarak EfCategoryDal sınıfını enjekte ettik.
+
+Sonrasında, **Category (Kategori)** entity’si için bir form oluşturduk. Bu form üzerinde şu işlemleri gerçekleştirdik:
+- Veri ekleme,  
+- Veri silme,  
+- Veri güncelleme,  
+- Veri listeleme,  
+- ID’ye göre getirme işlemleri. 🚀
 
 
 
