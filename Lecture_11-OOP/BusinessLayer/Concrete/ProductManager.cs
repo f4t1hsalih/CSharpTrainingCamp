@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
 using EntityLayer;
+using EntityLayer.DTOs;
 using System.Collections.Generic;
 
 namespace BusinessLayer.Concrete
@@ -12,6 +13,11 @@ namespace BusinessLayer.Concrete
         public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;
+        }
+
+        public List<ProductWithCategoryDTO> TGetProductsByCategory()
+        {
+            return _productDal.GetProductsWithCategory();
         }
 
         public void TAdd(Product entity)

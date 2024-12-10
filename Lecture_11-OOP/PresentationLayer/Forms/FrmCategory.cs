@@ -20,7 +20,7 @@ namespace PresentationLayer
 
         private void btnList_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = _categoryService.TGetListAll();
+            dgvCategory.DataSource = _categoryService.TGetListAll();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace PresentationLayer
         {
             int id = int.Parse(txtID.Text);
             var category = _categoryService.TGetById(id);
-            dataGridView1.DataSource = new List<Category> { category };
+            dgvCategory.DataSource = new List<Category> { category };
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
