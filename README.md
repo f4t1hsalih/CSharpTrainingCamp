@@ -104,5 +104,34 @@ Sonrasında, **Category (Kategori)** entity’si için bir form oluşturduk. Bu 
 - Veri listeleme,  
 - ID’ye göre getirme işlemleri. 🚀
 
+# 🌟 Proje 21: Entity'e Özgü Metot Yazmak
+Bu projede, **Ürünler** için bir form tasarlayıp listeleme işlemlerini gerçekleştirdik. Listeleme sırasında, ürünlerin bağlı olduğu kategorilerde yalnızca `CategoryId` görünüyordu. Bu durumu düzeltmek için, **Product** entity'sine özgü bir `GetProductsWithCategory` metodu yazdık. 
+
+Bu metod sayesinde, artık ürünlerin listelenmesi sırasında **Kategori Adı** görüntüleniyor. Bunu başarmak için, `Product` entity'sine özel **ProductWithCategoryDTO** adında bir DTO sınıfı tanımladık. DTO üzerinden gerekli değerleri atayarak kullanıcıya kategori adını gösterdik. 🛠️
+
+💡 Bu yapı, verilerin daha anlaşılır ve kullanıcı dostu bir şekilde sunulmasını sağladı. Ayrıca, katmanlı mimaride entity'lere özel işlemler için esnek bir altyapı oluşturduk.
+
+---
+
+## 📂 Metod İçeriği  
+```csharp
+public List<ProductWithCategoryDto> GetProductsWithCategory()
+{
+    var values = _database.Products
+        .Include(x => x.Category)
+        .Select(x => new ProductWithCategoryDto
+        {
+            Id = x.Id,
+            Name = x.Name,
+            Stock = x.Stock,
+            Price = x.Price,
+            Description = x.Description,
+            CategoryName = x.Category.Name
+        })
+        .ToList();
+
+    return values;
+}
+```
 
 
