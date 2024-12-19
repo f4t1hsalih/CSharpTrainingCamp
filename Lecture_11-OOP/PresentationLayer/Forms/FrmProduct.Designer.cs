@@ -44,7 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnList2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
@@ -59,6 +59,7 @@
             this.btnGetByID.TabIndex = 26;
             this.btnGetByID.Text = "ID\'ye Göre Getir";
             this.btnGetByID.UseVisualStyleBackColor = true;
+            this.btnGetByID.Click += new System.EventHandler(this.btnGetByID_Click);
             // 
             // btnDelete
             // 
@@ -80,6 +81,7 @@
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -90,6 +92,7 @@
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtName
             // 
@@ -197,6 +200,7 @@
             // 
             // cmbCategory
             // 
+            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(127, 140);
@@ -204,14 +208,14 @@
             this.cmbCategory.Size = new System.Drawing.Size(182, 28);
             this.cmbCategory.TabIndex = 33;
             // 
-            // textBox1
+            // txtDescription
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(127, 174);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 107);
-            this.textBox1.TabIndex = 35;
+            this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDescription.Location = new System.Drawing.Point(127, 174);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(182, 107);
+            this.txtDescription.TabIndex = 35;
             // 
             // label3
             // 
@@ -241,7 +245,7 @@
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 536);
             this.Controls.Add(this.btnList2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.label6);
@@ -261,7 +265,8 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmProduct";
+            this.Text = "Ürünler";
+            this.Load += new System.EventHandler(this.FrmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -286,7 +291,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbCategory;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnList2;
     }
