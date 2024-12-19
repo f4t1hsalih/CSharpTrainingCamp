@@ -104,7 +104,7 @@ Sonrasında, **Category (Kategori)** entity’si için bir form oluşturduk. Bu 
 - Veri listeleme,  
 - ID’ye göre getirme işlemleri. 🚀
 
-# 🌟 Proje 21: Entity'e Özgü Metot Yazmak
+## 🌟 Proje 21: Entity'e Özgü Metot Yazmak
 Bu projede, **Ürünler** için bir form tasarlayıp listeleme işlemlerini gerçekleştirdik. Listeleme sırasında, ürünlerin bağlı olduğu kategorilerde yalnızca `CategoryId` görünüyordu. Bu durumu düzeltmek için, **Product** entity'sine özgü bir `GetProductsWithCategory` metodu yazdık. 
 
 Bu metod sayesinde, artık ürünlerin listelenmesi sırasında **Kategori Adı** görüntüleniyor. Bunu başarmak için, `Product` entity'sine özel **ProductWithCategoryDTO** adında bir DTO sınıfı tanımladık. DTO üzerinden gerekli değerleri atayarak kullanıcıya kategori adını gösterdik. 🛠️
@@ -133,5 +133,9 @@ public List<ProductWithCategoryDto> GetProductsWithCategory()
     return values;
 }
 ```
+
+## 🌟 Proje 22: C# ile Dapper Kullanımı  
+
+Bu derste, **FrmProduct** için eksik kalan "ID'ye göre getir", "Ekle" ve "Güncelle" işlemlerini kodladık. Dapper hakkında bilgi edinerek, yeni bir proje oluşturup **Dapper** paketini kurduk. Proje içine **Repository** ve **DTO** klasörleri ekledik. DTO hakkında bilgi alarak, **ResultDTO**, **AddDTO** ve **UpdateDTO** sınıflarını yazdık. Repository kısmında ise asenkron metodlar hakkında bilgi edindik ve asenkron bir interface ile bu interfaceden miras alan bir class oluşturduk. 🛠️
 
 
