@@ -135,7 +135,9 @@ public List<ProductWithCategoryDto> GetProductsWithCategory()
 ```
 
 ## 🌟 Proje 22: C# ile Dapper Kullanımı  
-
 Bu derste, **FrmProduct** için eksik kalan "ID'ye göre getir", "Ekle" ve "Güncelle" işlemlerini kodladık. Dapper hakkında bilgi edinerek, yeni bir proje oluşturup **Dapper** paketini kurduk. Proje içine **Repository** ve **DTO** klasörleri ekledik. DTO hakkında bilgi alarak, **ResultDTO**, **AddDTO** ve **UpdateDTO** sınıflarını yazdık. Repository kısmında ise asenkron metodlar hakkında bilgi edindik ve asenkron bir interface ile bu interfaceden miras alan bir class oluşturduk. 🛠️
+
+## 🌟 Proje 23: Dapper İşlemlerinin Tamamlanması  
+**Dapper** kullanarak daha önceden hazırlamış olduğumuz formu kodladık. **Dapper** kod yapısı ile CRUD işlemlerini yaptık. İşlemleri Metodlar üzerinden gerçekleştirdik ve listeleme işlemi için DTO kullandık. Genel CRUD işlemleri bittikten sonra ise 3 tane farklı istatistik sorgusunu yine Dapper kod yapısı ile yazıp forma ekledik. 📊
 
 
