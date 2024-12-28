@@ -140,4 +140,18 @@ Bu derste, **FrmProduct** için eksik kalan "ID'ye göre getir", "Ekle" ve "Gün
 ## 🌟 Proje 23: Dapper İşlemlerinin Tamamlanması  
 **Dapper** kullanarak daha önceden hazırlamış olduğumuz formu kodladık. **Dapper** kod yapısı ile CRUD işlemlerini yaptık. İşlemleri Metodlar üzerinden gerçekleştirdik ve listeleme işlemi için DTO kullandık. Genel CRUD işlemleri bittikten sonra ise 3 tane farklı istatistik sorgusunu yine Dapper kod yapısı ile yazıp forma ekledik. 📊
 
+## 🌟 Proje 24: C# ile MongoDB Kullanımı 1
+**MongoDB** veritabanı sistemini öğrenerek, nerelerde ve neden kullanıldığını keşfettik. Ayrıca **BSON**'un ne olduğunu ve nasıl çalıştığını inceledik. Yeni bir WinForm uygulaması oluşturarak bu projede **Entities** ve **Services** klasörlerini kodladık. MongoDB'nin yapılandırılmasını, bir entity oluşturulmasını ve veritabanına **Customer** kaydı eklemeyi öğrendik. 🚀
+
+## 🌟 Proje 25: C# ile MongoDB Kullanımı 2
+**MongoDB 1** dersinde gerçekleştirdiğimiz ekleme işleminin devamı olarak; 
+- **Listeleme**  
+- **Silme**  
+- **Güncelleme**  
+- **Id'ye Göre Getirme**
+  
+işlemlerinin MongoDB'de nasıl yapılacağını öğrendik. Bu sayede MongoDB'nin yapısını daha iyi kavradık ve CRUD işlemlerini başarıyla tamamladık. 🎉
+
+
+
 
