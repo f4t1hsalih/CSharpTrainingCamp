@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_22-Dapper", "Lectur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_24-MongoDb", "Lecture_24-MongoDb\Lecture_24-MongoDb.csproj", "{4AEAB027-D570-463A-953A-4A17080C9E5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_26-PostgreSQL", "Lecture_26-PostgreSQL\Lecture_26-PostgreSQL.csproj", "{5EC40DF3-B56F-4A44-A55B-6419CC934C9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{4AEAB027-D570-463A-953A-4A17080C9E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AEAB027-D570-463A-953A-4A17080C9E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AEAB027-D570-463A-953A-4A17080C9E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC40DF3-B56F-4A44-A55B-6419CC934C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EC40DF3-B56F-4A44-A55B-6419CC934C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EC40DF3-B56F-4A44-A55B-6419CC934C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EC40DF3-B56F-4A44-A55B-6419CC934C9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
