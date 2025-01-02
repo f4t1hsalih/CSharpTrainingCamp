@@ -152,6 +152,8 @@ Bu derste, **FrmProduct** için eksik kalan "ID'ye göre getir", "Ekle" ve "Gün
   
 işlemlerinin MongoDB'de nasıl yapılacağını öğrendik. Bu sayede MongoDB'nin yapısını daha iyi kavradık ve CRUD işlemlerini başarıyla tamamladık. 🎉
 
+## 🌟 Proje 26: C# ile PostgreSQL Kullanımı 1
+**PostgreSQL** veritabanının ne işe yaradığını öğrendik ve hangi durumlarda kullanıldığını inceledik. Sonrasında PostgreSQL’de bir veritabanı oluşturup, DDL ile bir tablo oluşturduk. Projeye **EntityFramework6.Npgsql** paketini ekledik. Daha sonra bir form uygulaması ekleyip, klasik CRUD işlemlerini PostgreSQL ile nasıl yapacağımızı gördük. ✅
 
 
 
