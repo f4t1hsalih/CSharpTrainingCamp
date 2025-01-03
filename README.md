@@ -155,5 +155,18 @@ işlemlerinin MongoDB'de nasıl yapılacağını öğrendik. Bu sayede MongoDB'n
 ## 🌟 Proje 26: C# ile PostgreSQL Kullanımı 1
 **PostgreSQL** veritabanının ne işe yaradığını öğrendik ve hangi durumlarda kullanıldığını inceledik. Sonrasında PostgreSQL’de bir veritabanı oluşturup, DDL ile bir tablo oluşturduk. Projeye **EntityFramework6.Npgsql** paketini ekledik. Daha sonra bir form uygulaması ekleyip, klasik CRUD işlemlerini PostgreSQL ile nasıl yapacağımızı gördük. ✅
 
+## 🌟 Proje 27: C# ile PostgreSQL Kullanımı 2
+
+**PostgreSQL**'de DDL komutları kullanarak **Employee** ve **Department** tablolarını oluşturduk. Bu tablolar arasında ilişki kurarak veritabanı yapısını daha tutarlı hale getirdik. Projemize, bu tablolara yönelik işlemleri gerçekleştirmek için 2 yeni form ekledik.
+
+### 🔹 Employee Formu
+- Çalışanları **listeleme** ve **ekleme** işlemleri yapıldı.  
+- Çalışan eklerken, ilişkili **Department** tablosundan bir departman seçimi yapılması gerektiği için bir **ComboBox** kullanıldı.  
+- **ComboBox**, PostgreSQL'den veri çekilerek dinamik olarak dolduruldu.
+
+Bu proje, PostgreSQL ile ilişkili tablolar üzerinde işlem yapmayı ve form elemanlarını veritabanı ile entegre etmeyi öğrenmemiz açısından önemli bir adım oldu. ✅
+
+
+
 
 
