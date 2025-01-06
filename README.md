@@ -156,7 +156,6 @@ işlemlerinin MongoDB'de nasıl yapılacağını öğrendik. Bu sayede MongoDB'n
 **PostgreSQL** veritabanının ne işe yaradığını öğrendik ve hangi durumlarda kullanıldığını inceledik. Sonrasında PostgreSQL’de bir veritabanı oluşturup, DDL ile bir tablo oluşturduk. Projeye **EntityFramework6.Npgsql** paketini ekledik. Daha sonra bir form uygulaması ekleyip, klasik CRUD işlemlerini PostgreSQL ile nasıl yapacağımızı gördük. ✅
 
 ## 🌟 Proje 27: C# ile PostgreSQL Kullanımı 2
-
 **PostgreSQL**'de DDL komutları kullanarak **Employee** ve **Department** tablolarını oluşturduk. Bu tablolar arasında ilişki kurarak veritabanı yapısını daha tutarlı hale getirdik. Projemize, bu tablolara yönelik işlemleri gerçekleştirmek için 2 yeni form ekledik.
 
 ### 🔹 Employee Formu
@@ -165,6 +164,21 @@ işlemlerinin MongoDB'de nasıl yapılacağını öğrendik. Bu sayede MongoDB'n
 - **ComboBox**, PostgreSQL'den veri çekilerek dinamik olarak dolduruldu.
 
 Bu proje, PostgreSQL ile ilişkili tablolar üzerinde işlem yapmayı ve form elemanlarını veritabanı ile entegre etmeyi öğrenmemiz açısından önemli bir adım oldu. ✅
+
+## 🌟 Proje 28: Finansal CRM Uygulaması 1
+Bir **Finansal CRM** uygulaması geliştirmeye başladık. Projenin ilk aşamasında **MS SQL** üzerinde gerekli veritabanı ve tablolar oluşturuldu. Aşağıdaki tablolar tasarlandı ve tanımlandı:  
+- **Banka İşlemleri**  
+- **Bankalar**  
+- **Faturalar**  
+- **Kategoriler**  
+- **Harcamalar**  
+- **Kullanıcılar**  
+
+Daha sonra bir **Windows Forms** projesi oluşturduk ve uygulamaya iki form ekledik:  
+1. **Dashboard**  
+2. **Bank**  
+
+**Bank** adlı formun tasarımını tamamladık. Tasarımı daha düzenli hale getirmek için formu panellerle bölümlere ayırdık ve her paneli farklı renklerle renklendirdik. Böylece hem görsel olarak zengin hem de kullanıcı dostu bir arayüz oluşturduk. 📊
 
 
 
