@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_24-MongoDb", "Lectu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_26-PostgreSQL", "Lecture_26-PostgreSQL\Lecture_26-PostgreSQL.csproj", "{5EC40DF3-B56F-4A44-A55B-6419CC934C9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture_28-FinancialCrm", "Lecture_28-FinancialCrm\Lecture_28-FinancialCrm.csproj", "{B9182FD0-79DF-4920-B61E-295DDAB2F96F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{5EC40DF3-B56F-4A44-A55B-6419CC934C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EC40DF3-B56F-4A44-A55B-6419CC934C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EC40DF3-B56F-4A44-A55B-6419CC934C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9182FD0-79DF-4920-B61E-295DDAB2F96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9182FD0-79DF-4920-B61E-295DDAB2F96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9182FD0-79DF-4920-B61E-295DDAB2F96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9182FD0-79DF-4920-B61E-295DDAB2F96F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,6 +8,10 @@ namespace Lecture_26_PostgreSQL
     public partial class FrmDepartment : Form
     {
         private string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=SS.pass.4135;Database=CustomerDb;";
+        public FrmDepartment()
+        {
+            InitializeComponent();
+        }
 
         void ClearFields()
         {
@@ -33,14 +37,58 @@ namespace Lecture_26_PostgreSQL
             }
         }
 
-        public FrmDepartment()
-        {
-            InitializeComponent();
-        }
-
         private void FrmDepartment_Load(object sender, EventArgs e)
         {
             GetAllDepartments();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string query = "INSERT INTO Departments (Name) VALUES (@Name)";
+            using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+            {
+                connection.Open();
+                using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Name", txtName.Text);
+                    command.ExecuteNonQuery();
+                    GetAllDepartments();
+                    ClearFields();
+                }
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string query = "UPDATE Departments SET Name = @Name WHERE ID = @ID";
+            using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+            {
+                connection.Open();
+                using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ID", txtID.Text);
+                    command.Parameters.AddWithValue("@Name", txtName.Text);
+                    command.ExecuteNonQuery();
+                    GetAllDepartments();
+                    ClearFields();
+                }
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string query = "DELETE FROM Departments WHERE ID = @ID";
+            using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+            {
+                connection.Open();
+                using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ID", txtID.Text);
+                    command.ExecuteNonQuery();
+                    GetAllDepartments();
+                    ClearFields();
+                }
+            }
         }
     }
 }

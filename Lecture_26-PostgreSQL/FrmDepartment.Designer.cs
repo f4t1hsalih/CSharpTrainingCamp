@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GetById = new System.Windows.Forms.Button();
             this.dgvDepartments = new System.Windows.Forms.DataGridView();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -40,62 +39,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDepartments)).BeginInit();
             this.SuspendLayout();
             // 
-            // GetById
-            // 
-            this.GetById.Location = new System.Drawing.Point(31, 122);
-            this.GetById.Name = "GetById";
-            this.GetById.Size = new System.Drawing.Size(141, 40);
-            this.GetById.TabIndex = 62;
-            this.GetById.Text = "ID İle Getir";
-            this.GetById.UseVisualStyleBackColor = true;
-            // 
             // dgvDepartments
             // 
             this.dgvDepartments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDepartments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDepartments.Location = new System.Drawing.Point(12, 168);
+            this.dgvDepartments.Location = new System.Drawing.Point(12, 139);
             this.dgvDepartments.Name = "dgvDepartments";
-            this.dgvDepartments.Size = new System.Drawing.Size(444, 309);
+            this.dgvDepartments.Size = new System.Drawing.Size(400, 310);
             this.dgvDepartments.TabIndex = 61;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(315, 122);
+            this.btnUpdate.Location = new System.Drawing.Point(151, 93);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(141, 40);
+            this.btnUpdate.Size = new System.Drawing.Size(123, 40);
             this.btnUpdate.TabIndex = 60;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(31, 76);
+            this.btnDelete.Location = new System.Drawing.Point(12, 93);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(141, 40);
+            this.btnDelete.Size = new System.Drawing.Size(123, 40);
             this.btnDelete.TabIndex = 59;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(315, 76);
+            this.btnAdd.Location = new System.Drawing.Point(289, 93);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(141, 40);
+            this.btnAdd.Size = new System.Drawing.Size(123, 40);
             this.btnAdd.TabIndex = 58;
             this.btnAdd.Text = "Kaydet";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(177, 44);
+            this.txtName.Location = new System.Drawing.Point(162, 51);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(241, 26);
+            this.txtName.Size = new System.Drawing.Size(250, 26);
             this.txtName.TabIndex = 53;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 47);
+            this.label2.Location = new System.Drawing.Point(36, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 52;
@@ -103,15 +96,15 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(177, 12);
+            this.txtID.Location = new System.Drawing.Point(162, 19);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(241, 26);
+            this.txtID.Size = new System.Drawing.Size(250, 26);
             this.txtID.TabIndex = 51;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 15);
+            this.label1.Location = new System.Drawing.Point(42, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 20);
             this.label1.TabIndex = 50;
@@ -121,8 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 489);
-            this.Controls.Add(this.GetById);
+            this.ClientSize = new System.Drawing.Size(424, 461);
             this.Controls.Add(this.dgvDepartments);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
@@ -143,8 +135,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button GetById;
         private System.Windows.Forms.DataGridView dgvDepartments;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;

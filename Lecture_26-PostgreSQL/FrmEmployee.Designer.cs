@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GetById = new System.Windows.Forms.Button();
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -46,15 +45,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             this.SuspendLayout();
             // 
-            // GetById
-            // 
-            this.GetById.Location = new System.Drawing.Point(519, 150);
-            this.GetById.Name = "GetById";
-            this.GetById.Size = new System.Drawing.Size(141, 40);
-            this.GetById.TabIndex = 46;
-            this.GetById.Text = "ID İle Getir";
-            this.GetById.UseVisualStyleBackColor = true;
-            // 
             // dgvEmployees
             // 
             this.dgvEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -66,25 +56,27 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(519, 104);
+            this.btnUpdate.Location = new System.Drawing.Point(522, 126);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(141, 40);
             this.btnUpdate.TabIndex = 44;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(519, 58);
+            this.btnDelete.Location = new System.Drawing.Point(522, 80);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(141, 40);
             this.btnDelete.TabIndex = 43;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(519, 12);
+            this.btnAdd.Location = new System.Drawing.Point(522, 34);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(141, 40);
             this.btnAdd.TabIndex = 42;
@@ -181,7 +173,6 @@
             this.ClientSize = new System.Drawing.Size(692, 532);
             this.Controls.Add(this.cmbDepartment);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.GetById);
             this.Controls.Add(this.dgvEmployees);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
@@ -207,8 +198,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button GetById;
         private System.Windows.Forms.DataGridView dgvEmployees;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;

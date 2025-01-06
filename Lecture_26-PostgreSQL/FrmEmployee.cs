@@ -83,5 +83,41 @@ namespace Lecture_26_PostgreSQL
             ClearFields();
             GetAllEmployees();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string query = "DELETE FROM employees WHERE employeeid = @employeeid";
+            using (var connection = new NpgsqlConnection(_connectionString))
+            {
+                using (var command = new NpgsqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@employeeid", Convert.ToInt32(txtID.Text));
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+            ClearFields();
+            GetAllEmployees();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string query = "UPDATE employees SET name = @name, surname = @surname, salary = @salary, departmentid = @departmentid WHERE employeeid = @employeeid";
+            using (var connection = new NpgsqlConnection(_connectionString))
+            {
+                using (var command = new NpgsqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@name", txtName.Text);
+                    command.Parameters.AddWithValue("@surname", txtSurname.Text);
+                    command.Parameters.AddWithValue("@salary", Convert.ToDecimal(txtSalary.Text));
+                    command.Parameters.AddWithValue("@departmentid", cmbDepartment.SelectedValue);
+                    command.Parameters.AddWithValue("@employeeid", Convert.ToInt32(txtID.Text));
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+            ClearFields();
+            GetAllEmployees();
+        }
     }
 }
