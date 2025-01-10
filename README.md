@@ -180,7 +180,10 @@ Daha sonra bir **Windows Forms** projesi oluşturduk ve uygulamaya iki form ekle
 
 **Bank** adlı formun tasarımını tamamladık. Tasarımı daha düzenli hale getirmek için formu panellerle bölümlere ayırdık ve her paneli farklı renklerle renklendirdik. Böylece hem görsel olarak zengin hem de kullanıcı dostu bir arayüz oluşturduk. 📊
 
+## 🌟 Proje 29: Finansal CRM Uygulaması 2
+**FinancialCrm** uygulamasının bu dersinde, önceki dersin devamı niteliğinde bir ilerleme kaydettik. Yeni bir form oluşturarak **Faturalar (Bills)** üzerinde çalışmaya başladık. Projede **Entity Framework** kullanılarak **Database-First** yaklaşımı ile bir model klasörü oluşturuldu ve bu klasör içerisinde tasarlanan veritabanı entegre edildi.  
 
+Ardından, **Faturalar** formunda **CRUD** işlemleri başarıyla tamamlandı. Formlar arasında geçiş yapılabilmesi için gerekli ayarlamalar yapıldı. Projedeki olaylar, metodlar ile gerçekleştirilecek seviyede yeniden düzenlenerek daha işlevsel bir hale getirildi. 📄
 
 
 
