@@ -1,4 +1,7 @@
-﻿using System.Windows.Forms;
+﻿using Lecture_28_FinancialCrm.Models;
+using System;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Lecture_28_FinancialCrm
 {
@@ -9,21 +12,70 @@ namespace Lecture_28_FinancialCrm
             InitializeComponent();
         }
 
-        private void lblClose_Click(object sender, System.EventArgs e)
-        {
-            lblClose.BackColor = System.Drawing.Color.Red;
-            DialogResult result = MessageBox.Show(
-                "Uygulamadan çıkmak ister misiniz?",
-                "Çıkış",
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Question
-            );
+        FinancialCrmEntities db = new FinancialCrmEntities();
 
-            if (result == DialogResult.OK)
-                Application.Exit();
-            else
-                lblClose.BackColor = System.Drawing.Color.Transparent;
+        private decimal GetBankBalance(string bankName)
+        {
+            var value = db.Banks.Where(x => x.Title == bankName).Select(x => x.Balance).FirstOrDefault();
+            return value ?? 0;
         }
 
+        private string GetBankProcesses(int lastId)
+        {
+            if (!db.BankProcesses.Any()) // İşlem yoksa kontrol
+                return "Henüz işlem bulunmamaktadır.";
+
+            var process = db.BankProcesses.OrderByDescending(x => x.BankProcessId)
+                                           .Skip(lastId - 1)
+                                           .Take(1)
+                                           .FirstOrDefault();
+
+            if (process == null) // Eğer sonuç null ise
+                return "Henüz işlem bulunmamaktadır.";
+
+            return $"{process.Date} - {process.Description} - {process.Amount} ₺";
+        }
+
+        private void CloseForm(bool exitApplication)
+        {
+            lblClose.BackColor = System.Drawing.Color.Red;
+            string message = exitApplication ? "Uygulamadan çıkmak ister misiniz?" : "Dashboard'a dönmek ister misiniz?";
+            DialogResult result = MessageBox.Show(message, "Çıkış", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (result == DialogResult.OK)
+            {
+                if (exitApplication)
+                    Application.Exit();
+                else
+                    this.Close();
+            }
+            else
+            {
+                lblClose.BackColor = System.Drawing.Color.Transparent;
+            }
+        }
+
+        private void FrmBank_Load(object sender, System.EventArgs e)
+        {
+            lblYapiKredi.Text = GetBankBalance("Yapı Kredi").ToString() + " ₺";
+            lblZiraatBank.Text = GetBankBalance("Ziraat Bank").ToString() + " ₺";
+            lblPapara.Text = GetBankBalance("Papara").ToString() + " ₺";
+
+            lblBankProcess1.Text = GetBankProcesses(1);
+            lblBankProcess2.Text = GetBankProcesses(2);
+            lblBankProcess3.Text = GetBankProcesses(3);
+            lblBankProcess4.Text = GetBankProcesses(4);
+            lblBankProcess5.Text = GetBankProcesses(5);
+        }
+
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            CloseForm(false); // Dashboard'a dönüş
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            CloseForm(true); // Uygulama kapanışı
+        }
     }
 }
