@@ -185,5 +185,16 @@ Daha sonra bir **Windows Forms** projesi oluşturduk ve uygulamaya iki form ekle
 
 Ardından, **Faturalar** formunda **CRUD** işlemleri başarıyla tamamlandı. Formlar arasında geçiş yapılabilmesi için gerekli ayarlamalar yapıldı. Projedeki olaylar, metodlar ile gerçekleştirilecek seviyede yeniden düzenlenerek daha işlevsel bir hale getirildi. 📄
 
+## 🌟 Proje 30: Finansal CRM Uygulaması 3 - Final Dersi
+**FinancialCrm** uygulamasının bu son dersinde Dashboard formunu oluşturduk. Bu form üzerinden diğer formlara nasıl geçiş yapılabileceğini öğrendik. Ayrıca form üzerinde şu özellikleri ekledik:
+
+- **Timer Kullanımı**: Faturaları sırayla gösterdik.  
+- **Banka Hesap Bilgileri**: Toplam bakiyeyi ve son gelen havale tutarını görüntüledik.  
+- **Chart Kullanımı**: 
+  - Birinci chartta banka bakiyelerini gösterdik.  
+  - İkinci chartta ise fatura tutarlarını gösterdik.  
+
+Bu özellikler sayesinde hem **chart** kullanımı hem de **timer** yapısını öğrendik. Proje sonunda görsel açıdan zengin ve işlevsel bir dashboard oluşturduk. 🎉
+
 
 
