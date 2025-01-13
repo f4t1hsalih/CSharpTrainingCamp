@@ -196,5 +196,42 @@ Ardından, **Faturalar** formunda **CRUD** işlemleri başarıyla tamamlandı. F
 
 Bu özellikler sayesinde hem **chart** kullanımı hem de **timer** yapısını öğrendik. Proje sonunda görsel açıdan zengin ve işlevsel bir dashboard oluşturduk. 🎉
 
+## 🚀 Projenin Son Hali
 
+**FinancialCrm** uygulamasını tamamlamak için aşağıdaki formları ekledim ve sırasıyla kodladım:  
+
+- **Login (Giriş Formu)**  
+- **Category (Kategori Formu)**  
+- **Settings (Ayarlar Formu)**  
+- **Spending (Giderler Formu)**  
+
+### 🔑 Login (Giriş Formu)
+- Giriş formunda kullanıcıdan alınan **username** ve **password** değerleri, veritabanında kayıtlı olan bilgilerle karşılaştırıldı.  
+- **Password** değerleri, güvenlik amacıyla veritabanına **hashleme** yöntemiyle kaydedildi. Bu yüzden, kullanıcı giriş yaparken girilen şifre, tekrar hashlenerek karşılaştırma yapıldı.  
+- Hashleme işlemi ve formlar arası geçişler için **Helpers** klasörü altında ayrı sınıflar oluşturuldu.  
+
+### 🗂️ Category (Kategori Formu)
+- Kategori formunun tasarımı tamamlandı.  
+- Form için **CRUD işlemleri** kodlandı.  
+
+### 💰 Spending (Giderler Formu)
+- Giderler formu için de **CRUD işlemleri** kodlanarak tamamlandı.  
+
+### ⚙️ Settings (Ayarlar Formu)
+- Ayarlar formunda **admin** kullanıcıdan mevcut kullanıcı adı ve şifre bilgileri isteniyor.  
+- Kullanıcı adı ve şifre doğrulandıktan sonra, yeni şifre ve şifre doğrulama (confirm password) isteniyor.  
+- Yeni şifre ve doğrulama şifresi eşleşirse, yeni şifre **Helpers** sınıfında hashleniyor ve eski şifre yerine kaydediliyor.  
+- Aksi takdirde, gizlenen bir **label** kırmızı renkle gösterilerek kullanıcının nerelerde hata yaptığı veya hangi bilgileri eksik/yanlış girdiği bildiriliyor.  
+- Eğer kullanıcı doğru girişler yaparak şifreyi değiştirdiyse, **label** yeşil bir renkle bilgi mesajı gösteriyor ve işlem başarılı bir şekilde tamamlanıyor. ✅
+
+Bu düzenlemelerle proje hem daha işlevsel hem de daha güvenli bir hale getirildi. 🚀💻  
+
+---
+
+### Ekran Görüntüleri 📸
+![Proje Görseli](Pictures/Lecture30-FrmLogin.png)
+![Proje Görseli](Pictures/Lecture30-FrmDashboard.png)
+![Proje Görseli](Pictures/Lecture30-FrmBanks.png)
+![Proje Görseli](Pictures/Lecture30-FrmSpendings.png)
+![Proje Görseli](Pictures/Lecture30-FrmSettings.png)
 
