@@ -101,6 +101,7 @@
             this.btnSettings.TabIndex = 7;
             this.btnSettings.Text = "Ayarlar";
             this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnDashboard
             // 
@@ -112,6 +113,7 @@
             this.btnDashboard.TabIndex = 6;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnBankProcess
             // 
@@ -123,6 +125,7 @@
             this.btnBankProcess.TabIndex = 5;
             this.btnBankProcess.Text = "Banka Hareketleri";
             this.btnBankProcess.UseVisualStyleBackColor = true;
+            this.btnBankProcess.Click += new System.EventHandler(this.btnBankProcess_Click);
             // 
             // btnSpendings
             // 
@@ -134,6 +137,7 @@
             this.btnSpendings.TabIndex = 4;
             this.btnSpendings.Text = "Giderler";
             this.btnSpendings.UseVisualStyleBackColor = true;
+            this.btnSpendings.Click += new System.EventHandler(this.btnSpendings_Click);
             // 
             // btnBills
             // 
@@ -145,6 +149,7 @@
             this.btnBills.TabIndex = 3;
             this.btnBills.Text = "Faturalar";
             this.btnBills.UseVisualStyleBackColor = true;
+            this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
             // 
             // btnBanks
             // 
@@ -156,6 +161,7 @@
             this.btnBanks.TabIndex = 2;
             this.btnBanks.Text = "Bankalar";
             this.btnBanks.UseVisualStyleBackColor = true;
+            this.btnBanks.Click += new System.EventHandler(this.btnBanks_Click);
             // 
             // btnCategories
             // 

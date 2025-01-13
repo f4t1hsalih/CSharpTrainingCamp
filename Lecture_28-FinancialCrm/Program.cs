@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lecture_28_FinancialCrm.Forms;
+using System;
 using System.Windows.Forms;
 
 namespace Lecture_28_FinancialCrm
@@ -12,7 +13,7 @@ namespace Lecture_28_FinancialCrm
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Ana formu başlat
-            FrmDashboard mainForm = new FrmDashboard();
+            FrmLogin mainForm = new FrmLogin();
 
             // Ana formu FormNavigator'a ayarla
             FormNavigator.SetMainForm(mainForm);

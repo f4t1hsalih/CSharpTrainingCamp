@@ -25,5 +25,35 @@ namespace Lecture_28_FinancialCrm
                 Application.Exit();
             }
         }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmDashboard());
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmCategory());
+        }
+
+        private void btnBanks_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmBank());
+        }
+
+        private void btnBills_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmBills());
+        }
+
+        private void btnSpendings_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmSpending());
+        }
+
+        private void btnBankProcess_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmBankProcess());
+        }
     }
 }
