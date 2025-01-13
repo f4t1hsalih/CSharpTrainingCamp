@@ -1,4 +1,5 @@
-﻿using Lecture_28_FinancialCrm.Models;
+﻿using Lecture_28_FinancialCrm.Helpers;
+using Lecture_28_FinancialCrm.Models;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -8,6 +9,7 @@ namespace Lecture_28_FinancialCrm.Forms
     public partial class FrmLogin : Form
     {
         FinancialCrmEntities db = new FinancialCrmEntities();
+
         public FrmLogin()
         {
             InitializeComponent();
@@ -17,7 +19,7 @@ namespace Lecture_28_FinancialCrm.Forms
         {
             lblExit.BackColor = System.Drawing.Color.Red;
 
-            DialogResult result = MessageBox.Show("Uygulamadan çıkmak ister misiniz?", "Çıkış", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Uygulamadan Çıkmak İster Misiniz?", "Çıkış", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
                 Application.Exit();
@@ -32,19 +34,28 @@ namespace Lecture_28_FinancialCrm.Forms
         {
             if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
             {
-                MessageBox.Show("Kullanıcı adı ve şifre boş bırakılamaz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Kullanıcı Adı Ve Şifre Boş Bırakılamaz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            Users user = db.Users.FirstOrDefault(x => x.Username == username && x.Password == password);
+
+            // Kullanıcının girdiği şifreyi hashliyoruz
+            string hashedPassword = HashHelper.HashPassword(password);
+
+            // Veritabanında kullanıcının şifresini ve kullanıcı adını kontrol ediyoruz
+            Users user = db.Users.FirstOrDefault(x => x.Username == username && x.Password == hashedPassword);
+
             if (user != null)
             {
+                // Kullanıcı adı ve şifre doğruysa, ana sayfaya yönlendiriyoruz
                 FormNavigator.Navigate(this, new FrmDashboard());
             }
             else
             {
-                MessageBox.Show("Kullanıcı adı veya şifre hatalı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Hatalı giriş durumunda kullanıcıya mesaj gösteriyoruz
+                MessageBox.Show("Kullanıcı Adı Veya Şifre Hatalı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

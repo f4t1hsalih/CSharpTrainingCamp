@@ -105,6 +105,7 @@
     <Compile Include="Forms\FrmSpending.Designer.cs">
       <DependentUpon>FrmSpending.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HashHelper.cs" />
     <Compile Include="Models\BankProcesses.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -208,6 +209,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Şifre.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
