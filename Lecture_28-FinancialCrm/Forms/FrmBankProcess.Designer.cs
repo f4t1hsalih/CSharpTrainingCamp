@@ -39,8 +39,12 @@
             this.btnBills = new System.Windows.Forms.Button();
             this.btnBanks = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dgwBankProcess = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwBankProcess)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -174,11 +178,33 @@
             this.btnCategories.UseVisualStyleBackColor = true;
             this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dgwBankProcess);
+            this.panel3.Location = new System.Drawing.Point(182, 56);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(613, 377);
+            this.panel3.TabIndex = 14;
+            // 
+            // dgwBankProcess
+            // 
+            this.dgwBankProcess.AllowUserToAddRows = false;
+            this.dgwBankProcess.AllowUserToDeleteRows = false;
+            this.dgwBankProcess.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgwBankProcess.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwBankProcess.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgwBankProcess.Location = new System.Drawing.Point(0, 0);
+            this.dgwBankProcess.Name = "dgwBankProcess";
+            this.dgwBankProcess.ReadOnly = true;
+            this.dgwBankProcess.Size = new System.Drawing.Size(613, 377);
+            this.dgwBankProcess.TabIndex = 0;
+            // 
             // FrmBankProcess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 445);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -187,9 +213,12 @@
             this.Name = "FrmBankProcess";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBankProcess";
+            this.Load += new System.EventHandler(this.FrmBankProcess_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgwBankProcess)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,5 +236,7 @@
         private System.Windows.Forms.Button btnBills;
         private System.Windows.Forms.Button btnBanks;
         private System.Windows.Forms.Button btnCategories;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dgwBankProcess;
     }
 }
