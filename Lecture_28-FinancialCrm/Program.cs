@@ -3,14 +3,21 @@ using System.Windows.Forms;
 
 namespace Lecture_28_FinancialCrm
 {
-    internal static class Program
+    static class Program
     {
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmDashboard());
+
+            // Ana formu başlat
+            FrmDashboard mainForm = new FrmDashboard();
+
+            // Ana formu FormNavigator'a ayarla
+            FormNavigator.SetMainForm(mainForm);
+
+            Application.Run(mainForm);
         }
     }
 }

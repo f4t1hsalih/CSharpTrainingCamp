@@ -78,33 +78,13 @@ namespace Lecture_28_FinancialCrm
             GetBills();
         }
 
-        private void CloseForm(bool exitApplication)
-        {
-            lblClose.BackColor = System.Drawing.Color.Red;
-            string message = exitApplication ? "Uygulamadan çıkmak ister misiniz?" : "Dashboard'a dönmek ister misiniz?";
-            DialogResult result = MessageBox.Show(message, "Çıkış", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-
-            if (result == DialogResult.OK)
-            {
-                if (exitApplication)
-                    Application.Exit();
-                else
-                    this.Close();
-            }
-            else
-            {
-                lblClose.BackColor = System.Drawing.Color.Transparent;
-            }
-        }
-
-        private void lblClose_Click(object sender, EventArgs e)
-        {
-            CloseForm(false);
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
-            CloseForm(true);
+            DialogResult result = MessageBox.Show("Uygulamadan çıkmak ister misiniz?", "Çıkış", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -122,5 +102,34 @@ namespace Lecture_28_FinancialCrm
             DeleteBill(int.Parse(txtID.Text));
         }
 
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmDashboard());
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmCategory());
+        }
+
+        private void btnBanks_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmBank());
+        }
+
+        private void btnSpendings_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmSpending());
+        }
+
+        private void btnBankProcess_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmBankProcess());
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmSettings());
+        }
     }
 }

@@ -38,7 +38,6 @@
             this.btnBanks = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblClose = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblYapiKredi = new System.Windows.Forms.Label();
@@ -106,6 +105,7 @@
             this.btnSettings.TabIndex = 7;
             this.btnSettings.Text = "Ayarlar";
             this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnDashboard
             // 
@@ -117,6 +117,7 @@
             this.btnDashboard.TabIndex = 6;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnBankProcess
             // 
@@ -128,6 +129,7 @@
             this.btnBankProcess.TabIndex = 5;
             this.btnBankProcess.Text = "Banka Hareketleri";
             this.btnBankProcess.UseVisualStyleBackColor = true;
+            this.btnBankProcess.Click += new System.EventHandler(this.btnBankProcess_Click);
             // 
             // btnSpendings
             // 
@@ -139,6 +141,7 @@
             this.btnSpendings.TabIndex = 4;
             this.btnSpendings.Text = "Giderler";
             this.btnSpendings.UseVisualStyleBackColor = true;
+            this.btnSpendings.Click += new System.EventHandler(this.btnSpendings_Click);
             // 
             // btnBills
             // 
@@ -150,6 +153,7 @@
             this.btnBills.TabIndex = 3;
             this.btnBills.Text = "Faturalar";
             this.btnBills.UseVisualStyleBackColor = true;
+            this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
             // 
             // btnBanks
             // 
@@ -172,27 +176,16 @@
             this.btnCategories.TabIndex = 1;
             this.btnCategories.Text = "Kategoriler";
             this.btnCategories.UseVisualStyleBackColor = true;
+            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(114)))), ((int)(((byte)(227)))));
-            this.panel2.Controls.Add(this.lblClose);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(807, 50);
             this.panel2.TabIndex = 1;
-            // 
-            // lblClose
-            // 
-            this.lblClose.AutoSize = true;
-            this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(774, 16);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(20, 20);
-            this.lblClose.TabIndex = 0;
-            this.lblClose.Text = "X";
-            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // label1
             // 
@@ -492,7 +485,6 @@
         private System.Windows.Forms.Label lblPapara;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Label lblBankProcess1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lblBankProcess5;

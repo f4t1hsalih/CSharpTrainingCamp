@@ -25,50 +25,13 @@ namespace Lecture_28_FinancialCrm
             InitializeComponent();
         }
 
-        private void OpenForm(Form form)
-        {
-            form.FormClosed += (s, args) => this.Show(); // Form kapandığında Dashboard'u tekrar göster
-            form.Show();
-            this.Hide(); // Dashboard'u gizle
-        }
-
-        private void lblClose_Click(object sender, EventArgs e)
-        {
-            lblClose.BackColor = System.Drawing.Color.Red;
-            DialogResult result = MessageBox.Show(
-                "Uygulamadan çıkmak ister misiniz?",
-                "Çıkış",
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Question
-            );
-
-            if (result == DialogResult.OK)
-                Application.Exit();
-            else
-                lblClose.BackColor = System.Drawing.Color.Transparent;
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-                "Uygulamadan çıkmak ister misiniz?",
-                "Çıkış",
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Question
-            );
-
+            DialogResult result = MessageBox.Show("Uygulamadan çıkmak ister misiniz?", "Çıkış", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
+            {
                 Application.Exit();
-        }
-
-        private void btnBanks_Click(object sender, EventArgs e)
-        {
-            OpenForm(new FrmBank());
-        }
-
-        private void btnBills_Click(object sender, EventArgs e)
-        {
-            OpenForm(new FrmBills());
+            }
         }
 
         private void FrmDashboard_Load(object sender, EventArgs e)
@@ -130,6 +93,36 @@ namespace Lecture_28_FinancialCrm
             {
                 MessageBox.Show("Fatura bilgisi alınamadı: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnBanks_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmBank());
+        }
+
+        private void btnBills_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmBills());
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmCategory());
+        }
+
+        private void btnSpendings_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmSpending());
+        }
+
+        private void btnBankProcess_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmBankProcess());
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FormNavigator.Navigate(this, new FrmSettings());
         }
     }
 }

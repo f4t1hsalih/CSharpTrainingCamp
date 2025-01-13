@@ -56,23 +56,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmBank.cs">
+    <Compile Include="Helpers\FormNavigator.cs" />
+    <Compile Include="Forms\FrmBank.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBank.Designer.cs">
+    <Compile Include="Forms\FrmBank.Designer.cs">
       <DependentUpon>FrmBank.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBills.cs">
+    <Compile Include="Forms\FrmBankProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBills.Designer.cs">
+    <Compile Include="Forms\FrmBankProcess.Designer.cs">
+      <DependentUpon>FrmBankProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBills.Designer.cs">
       <DependentUpon>FrmBills.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDashboard.cs">
+    <Compile Include="Forms\FrmCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDashboard.Designer.cs">
+    <Compile Include="Forms\FrmCategory.Designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDashboard.Designer.cs">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSettings.Designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSpending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSpending.Designer.cs">
+      <DependentUpon>FrmSpending.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BankProcesses.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -112,14 +137,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmBank.resx">
+    <EmbeddedResource Include="Forms\FrmBank.resx">
       <DependentUpon>FrmBank.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBills.resx">
+    <EmbeddedResource Include="Forms\FrmBankProcess.resx">
+      <DependentUpon>FrmBankProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBills.resx">
       <DependentUpon>FrmBills.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDashboard.resx">
+    <EmbeddedResource Include="Forms\FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSpending.resx">
+      <DependentUpon>FrmSpending.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
